@@ -10,10 +10,11 @@ This project analyzes Charlie Puth's music trends using Spotify API data and a c
 - **Tableau**: Creating visualizations and dashboards for insights
 
 ## Process  
-1. **Data Extraction & Storage (AWS Lambda & S3):**  
+1. **Data Extraction & Storage (AWS Lambda & S3):** [View the Code - `lambda_function_1.py`](./lambda_function_1.py)
+
    - **Setup & Configuration:**
       - Attaches a Lambda Layer for `requests`.
-      - Grants IAM role access to S3 (AmazonS3FullAccess) and logging (AWSLambdaBasicExecutionRole).
+      - Grants IAM role access to S3 (`AmazonS3FullAccess`) and logging (`AWSLambdaBasicExecutionRole`).
       - Increases timeout (max 15 mins).
       - Uses Lambda Environment Variables for client_id & client_secret.
    - **Authentication:** Retrieves an OAuth token using `client_id` and `client_secret`, encoding them in Base64, and making a POST request to Spotify’s authentication URL.
@@ -36,10 +37,11 @@ This project analyzes Charlie Puth's music trends using Spotify API data and a c
       - Uses `boto3.client("s3").put_object()` to store the CSV file in an S3 bucket, naming it with a unique filename with a timestamp.
    - **Triggered via Input:** Accepts artist_name as an input parameter (defaults to “Charlie Puth” if not provided).
 
-2. **Data Loading & Database Integration (AWS Lambda & RDS MySQL):**
+2. **Data Loading & Database Integration (AWS Lambda & RDS MySQL):** [View the Code - `lambda_function_2.py`](./lambda_function_2.py)
    - **Setup & Pre-requisite:**
      - Create an inital database and its table in RDS using MySQL Workbench.
      - Attaches a Lambda Layer for `requests`, `pandas`, `sqlalchemy`, and `pymysql`.
+     - Grants IAM role access to S3 (`s3:GetObject`) and RDS (`rds-db:connect`).
    - **Retrieving & Reading Data from S3:** Connects to S3, reads the CSV file, and loads it into a Pandas DataFrame.
    - **Connecting to RDS MySQL:**
       - Retrieves credentials (`DB_USER`, `DB_PASSWORD`, etc.) from environment variables.
@@ -79,7 +81,7 @@ Uncovered key trends in Charlie Puth's music releases, track popularity, and col
    - Songs around 3 to 3.5 minutes perform best, while longer tracks see lower popularity.
    - Analyzed how collaborations influence popularity, with solo tracks often outperforming them.
 
-Check out the AWS Lambda functions and visualizations in this repo!
+**Check out the AWS Lambda functions and visualizations in this repo!**
 
 ## Links  
 - [LinkedIn Post](#)  
