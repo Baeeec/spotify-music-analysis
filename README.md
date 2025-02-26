@@ -37,7 +37,9 @@ This project analyzes Charlie Puth's music trends using Spotify API data, AWS (L
    - **Triggered via Input:** Accepts artist_name as an input parameter (defaults to “Charlie Puth” if not provided).
 
 2. **Data Loading & Database Integration (AWS Lambda & RDS MySQL):**
-   - **Pre-requisite:** Create an inital database and its table in RDS using MySQL Workbench.
+   - **Setup & Pre-requisite:**
+     - Create an inital database and its table in RDS using MySQL Workbench.
+     - Attaches a Lambda Layer for `requests`, `pandas`, `sqlalchemy`, and `pymysql`.
    - **Retrieving & Reading Data from S3:** Connects to S3, reads the CSV file, and loads it into a Pandas DataFrame.
    - **Connecting to RDS MySQL:**
       - Retrieves credentials (`DB_USER`, `DB_PASSWORD`, etc.) from environment variables.
@@ -83,4 +85,5 @@ Check out the AWS Lambda functions and visualizations below!
 - [LinkedIn Post](#)  
 - [Tableau Public Dashboard](https://public.tableau.com/views/SpotifyAnalysisCharliePuthsMusicTrends1/SpotifyAnalysisCharliePuthsMusicTrends?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
 
+![Tableau Dashboard](dashboard.png)
 ---
