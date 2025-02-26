@@ -85,5 +85,6 @@ Check out the AWS Lambda functions and visualizations below!
 - [LinkedIn Post](#)  
 - [Tableau Public Dashboard](https://public.tableau.com/views/SpotifyAnalysisCharliePuthsMusicTrends1/SpotifyAnalysisCharliePuthsMusicTrends?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
 
-![Tableau Dashboard](dashboard.png)
+![Spotify Analysis – Charlie Puth’s Music Trends Dashboard](./Spotify Analysis – Charlie Puth’s Music Trends_Dashboard.png)
+
 ---
