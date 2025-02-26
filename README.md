@@ -79,12 +79,10 @@ Uncovered key trends in Charlie Puth's music releases, track popularity, and col
    - Songs around 3 to 3.5 minutes perform best, while longer tracks see lower popularity.
    - Analyzed how collaborations influence popularity, with solo tracks often outperforming them.
 
-Check out the AWS Lambda functions and visualizations below!
+Check out the AWS Lambda functions and visualizations in this repo!
 
 ## Links  
 - [LinkedIn Post](#)  
 - [Tableau Public Dashboard](https://public.tableau.com/views/SpotifyAnalysisCharliePuthsMusicTrends1/SpotifyAnalysisCharliePuthsMusicTrends?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
-
-![Spotify Analysis – Charlie Puth’s Music Trends Dashboard](./Spotify Analysis – Charlie Puth’s Music Trends_Dashboard.png)
 
 ---
