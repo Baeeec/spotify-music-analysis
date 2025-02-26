@@ -1,11 +1,11 @@
 # Spotify Analysis – Charlie Puth’s Music Trends 🎵
 
 ## Overview  
-This project analyzes Charlie Puth's music trends using Spotify API data and a combination of **AWS, Python, MySQL, and Tableau**. The data is fetched through **AWS Lambda** which interacts with the Spotify API, processed, and stored in **S3** and **RDS**. MySQL is used for cleaning, transforming, and analyzing the data, while Tableau creates interactive visualizations to uncover insights on track popularity, album performance, and collaboration trends.
+This project analyzes Charlie Puth's music trends using Spotify API data and a combination of **AWS, Python, MySQL, and Tableau**. The data is fetched through **AWS Lambda** which interacts with the Spotify API, processed, and stored in **S3** and **RDS**. MySQL is used for cleaning, transforming, and analyzing the data stored in RDS, while Tableau creates interactive visualizations to uncover insights on track popularity, album performance, and collaboration trends.
 
 ## Technologies Used  
 - **AWS Lambda (Python)**: Automates API calls to fetch and process Spotify data
-- **S3 & RDS**: Stores structured data  
+- **S3 & RDS**: Stores structured data
 - **MySQL**: Cleans, transforms, and analyzes data with SQL queries
 - **Tableau**: Creating visualizations and dashboards for insights
 
