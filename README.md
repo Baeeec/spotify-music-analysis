@@ -10,7 +10,7 @@ This project analyzes Charlie Puth's music trends using Spotify API data and a c
 - **Tableau**: Creating visualizations and dashboards for insights
 
 ## Process  
-1. **Data Extraction & Storage (AWS Lambda & S3):** [View the Code - `lambda_function_1.py`](./lambda_function_1.py)
+1. **Data Extraction & Storage (AWS Lambda & S3):** [View the Code - `data_ingestion.py`](./data_ingestion.py)
 
    - **Setup & Configuration:**
       - Attaches a Lambda Layer for `requests`.
@@ -37,7 +37,7 @@ This project analyzes Charlie Puth's music trends using Spotify API data and a c
       - Uses `boto3.client("s3").put_object()` to store the CSV file in an S3 bucket, naming it with a unique filename with a timestamp.
    - **Triggered via Input:** Accepts artist_name as an input parameter (defaults to “Charlie Puth” if not provided).
 
-2. **Data Loading & Database Integration (AWS Lambda & RDS MySQL):** [View the Code - `lambda_function_2.py`](./lambda_function_2.py)
+2. **Data Loading & Database Integration (AWS Lambda & RDS MySQL):** [View the Code - `data_loading.py`](./data_loading.py)
    - **Setup & Pre-requisite:**
      - Create an inital database and its table in RDS using MySQL Workbench.
      - Attaches a Lambda Layer for `requests`, `pandas`, `sqlalchemy`, and `pymysql`.
