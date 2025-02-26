@@ -87,4 +87,6 @@ Uncovered key trends in Charlie Puth's music releases, track popularity, and col
 - [LinkedIn Post](#)  
 - [Tableau Public Dashboard](https://public.tableau.com/views/SpotifyAnalysisCharliePuthsMusicTrends1/SpotifyAnalysisCharliePuthsMusicTrends?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
 
+![Spotify Analysis – Charlie Puth’s Music Trends Dashboard](./Spotify%20Analysis%20–%20Charlie%20Puth’s%20Music%20Trends_Dashboard.png)
+
 ---
