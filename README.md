@@ -84,7 +84,7 @@ Uncovered key trends in Charlie Puth's music releases, track popularity, and col
 **Check out the AWS Lambda functions and visualizations in this repo!**
 
 ## Links  
-- [LinkedIn Post](#)  
+- [LinkedIn Post](https://www.linkedin.com/posts/hokiuchan_just-completed-my-latest-data-project-activity-7300703709288673280-vN01?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADxEAagBTXXLw3KTU9asavvuZBUpbgGoyN0)  
 - [Tableau Public Dashboard](https://public.tableau.com/views/SpotifyAnalysisCharliePuthsMusicTrends1/SpotifyAnalysisCharliePuthsMusicTrends?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
 
 ![Spotify Analysis – Charlie Puth’s Music Trends Dashboard](./Spotify%20Analysis_Dashboard.png)
